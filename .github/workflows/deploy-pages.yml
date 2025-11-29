@@ -17,8 +17,7 @@ jobs:
           node-version: '18'
       - name: Install dependencies
         working-directory: ./project22
-        run: npm ci
-      - name: Build
+        run: npm install      - name: Build
         working-directory: ./project22
         run: npm run build
       - name: Deploy to GitHub Pages
