@@ -17,7 +17,39 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## Deployment
 
-- **Published to GitHub Pages:** https://saikrishnarayapudi.github.io/frontendhackathon/
-- Deployed using the `gh-pages` package via `npm run deploy` (builds `dist` and publishes the branch).
 
 If the site does not appear immediately, wait a minute and then refresh. You can also check the repository Settings → Pages to confirm the branch and URL.
+### How to verify the public URL (quick)
+
+- Open: `https://saikrishnarayapudi.github.io/frontendhackathon/`
+- From PowerShell run:
+
+```powershell
+curl.exe -I "https://saikrishnarayapudi.github.io/frontendhackathon/"
+curl.exe -I "https://raw.githubusercontent.com/saikrishnarayapudi/frontendhackathon/gh-pages/index.html"
+```
+
+If the first returns `HTTP/1.1 200 OK` the site is live. If the second returns `200` while the first returns `404`, open GitHub → Settings → Pages and re-select `gh-pages` as the source and save to force re-provisioning.
+
+### Troubleshooting
+
+- Ensure `gh-pages` branch exists (we publish to it). You can list remote branches:
+
+```powershell
+git fetch origin
+git branch -r | Select-String "gh-pages"
+```
+
+- If Pages still shows 404 after waiting, re-deploy locally and/or check Actions logs:
+
+```powershell
+# rebuild and redeploy
+npm install
+npm run deploy
+
+# check Actions (requires gh CLI login)
+gh run list --repo saikrishnarayapudi/frontendhackathon
+gh run view <run-id> --repo saikrishnarayapudi/frontendhackathon --log
+```
+
+If you want, I can check the Actions logs and re-run the deploy here — tell me which you prefer.
