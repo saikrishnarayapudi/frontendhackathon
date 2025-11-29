@@ -1,0 +1,65 @@
+/* QuickNav styles */
+.quick-nav {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-slate-200);
+  overflow: hidden;
+  z-index: 50;
+}
+
+.quick-nav-header {
+  padding: 0.5rem 0.75rem;
+  background-color: var(--color-slate-50);
+  border-bottom: 1px solid var(--color-slate-200);
+}
+
+.quick-nav-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-slate-600);
+}
+
+.quick-nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-nav-link {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  text-decoration: none;
+  color: var(--color-slate-700);
+}
+
+.quick-nav-link:hover {
+  background-color: var(--color-slate-50);
+}
+
+.quick-nav-link.active-cyan {
+  background-color: var(--color-cyan-50);
+  color: var(--color-cyan-700);
+  font-weight: 500;
+}
+
+.quick-nav-link.active-yellow {
+  background-color: var(--color-yellow-50);
+  color: var(--color-yellow-700);
+  font-weight: 500;
+}
+
+.quick-nav-link.active-purple {
+  background-color: var(--color-purple-50);
+  color: var(--color-purple-700);
+  font-weight: 500;
+}
+
+.quick-nav-link.active-pink {
+  background-color: var(--color-pink-50);
+  color: var(--color-pink-700);
+  font-weight: 500;
+}

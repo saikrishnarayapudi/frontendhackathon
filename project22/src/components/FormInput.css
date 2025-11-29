@@ -1,0 +1,20 @@
+/* FormInput styles */
+.form-input-wrapper {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form-input-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-slate-700);
+  margin-bottom: 0.25rem;
+}
+
+.form-input-hint {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-slate-500);
+  margin-top: 0.25rem;
+}
