@@ -6,8 +6,7 @@ import './styles/index.css'
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
+    <BrowserRouter basename="/frontendhackathon/">
     </BrowserRouter>
   </React.StrictMode>
 )
