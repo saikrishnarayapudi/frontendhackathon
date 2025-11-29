@@ -14,3 +14,10 @@ The React Compiler is currently not compatible with SWC. See [this issue](https:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Deployment
+
+- **Published to GitHub Pages:** https://saikrishnarayapudi.github.io/frontendhackathon/
+- Deployed using the `gh-pages` package via `npm run deploy` (builds `dist` and publishes the branch).
+
+If the site does not appear immediately, wait a minute and then refresh. You can also check the repository Settings → Pages to confirm the branch and URL.
